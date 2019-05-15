@@ -1,7 +1,7 @@
 *{margin:0;}
 html,body{height:100%; width:100%; min-width: 1230;}
 
-#banner {margin-top:0; position: absolute; height: 150px; width: 100%; background: #FFD700;}
+#banner {margin-top:0; position: absolute; height: 200px; width: 100%; background: #FFD700;}
+#banner img{margin-left: 5px; width:1000;}
 
-
-#menuTopo {margin-top: 150px; position: absolute; height: 55px; width: 100%; background: #2B2B2B;}
+#menuTopo {margin-top: 200px; position: absolute; height: 55px; width: 100%; background: #2B2B2B;}
