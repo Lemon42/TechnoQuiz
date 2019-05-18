@@ -1,12 +1,18 @@
+/*DEFAULT*/
 *{margin:0;}
 html,body{height:100%; width:100%; min-width: 1230;}
 
+/*BANNER*/
 #banner {margin-top:0; position: absolute; height: 200px; width: 100%; background: #FFD700;}
 #banner img{margin-left: 5px; width:1000;}
 
+/*TOPO*/
 #menuTopo {margin-top: 200px; position: absolute; height: 55px; width: 100%; background: #2B2B2B;}
-#menuTopo a{text-decoration: none; color:#FFD700; font-family: Arial; font-size:30px;position:absolute;; margin-top: 12px; width: 1200px; position: absolute; transform: translateX(-50%);} 
+ul{float:left; list-style:none; margin-top: 8px; margin-left: 0px}
+li{position:relative;float:left;}
+li a{text-decoration: none; color:#FFD700;list-style: none; margin:0 0 0 60px; font-family: Trebuchet MS; font-size:35px;} 
 
+#text{font-family: Trebuchet MS; font-size:29px; color:#423D3C; position:relative;}
 #facil a:hover{color:#228B22;}
 #medio a:hover{color:#FFFF00; }
 #dificil a:hover{color:#FF0000;}
