@@ -6,6 +6,90 @@
 	<link  size="20x20px" rel='shortcut icon' href="../img/Icone.ico"/>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link rel="stylesheet" type="text/css" href="styleForm.css">
+	
+	<script>
+	 	function checked(){
+            // validacao
+            for (var x = 0; x < 10; x++)
+            {
+                if (document.formPergunta[x].radio[0].checked == false && document.formPergunta[x].radio[1].checked == false && document.formPergunta[x].radio[2].checked == false && document.formPergunta[x].radio[3].checked == false)
+                    {
+                        alert('Você não respondeu todas as questões!!! Por favor responda . . .');
+                        return false;
+                    }
+            }
+       
+            // contagem de acertos
+            var acertos = 0;
+            
+            if (document.getElementById("r1").checked == true)
+            {
+                acertos = acertos+1;
+            }
+            
+            if (document.getElementById("r2").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r3").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+            if (document.getElementById("r4").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r5").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r6").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r7").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r8").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r9").checked == true)
+            {
+                acertos = acertos+1;
+            }
+			
+			if (document.getElementById("r10").checked == true)
+            {
+                acertos = acertos+1;
+            }
+
+
+  			sessionStorage.setItem("variavel", acertos);
+			open(﻿'fim.html','fim','status=no,Width=700px,Height=600px');
+			
+			document.getElementById("resposta1").style.color = "#00FF7F";
+			document.getElementById("resposta2").style.color = "#00FF7F";
+			document.getElementById("resposta3").style.color = "#00FF7F";
+			document.getElementById("resposta4").style.color = "#00FF7F";
+			document.getElementById("resposta5").style.color = "#00FF7F";
+			document.getElementById("resposta6").style.color = "#00FF7F";
+			document.getElementById("resposta7").style.color = "#00FF7F";
+			document.getElementById("resposta8").style.color = "#00FF7F";
+			document.getElementById("resposta9").style.color = "#00FF7F";
+			document.getElementById("resposta10").style.color = "#00FF7F";
+			
+			return false;
+        }
+    </script>
 </head>
 	<!-- Everton Dias n°10, 1°C -->
 	<!-- Gabriel Lopes n°13, 1°C -->
@@ -22,16 +106,286 @@
                 <li><div id="text" title="choose your destiny">Dificuldade:</div></li>
                 <li><div id="facil"><a href="#" title="Você tá de Brincadeira né?">FÁCIL</a></div></li>
                 <li><div id="medio"><a href="medio.html" title="Okay, podemos começar . . .">MÉDIO</a></div></li>
-                <li><div id="dificil"> <a href="dificil.html" title="Cê é o BIXÃO mesmo em doido!">DIFÍCIL</a></div></li>
+                <li><div id="dificil"><a href="dificil.html" title="Cê é o BIXÃO mesmo em doido!">DIFÍCIL</a></div></li>
             </ul>
 
-            <div id="voltar"><a href="../index.html" title="Voltar a página inicial">Voltar</a></div>
+            <div id="voltar"><a href="../index.html" title="Voltar à página inicial">Voltar</a></div>
 		</div>
 	</div>
 	
-	<div id="conteudo">
-    <center>
-    </center>
+	<div id="conteudo"> 
+    	<h1 style="color: #228B22;">FÁCIL</h1><br>
+    	<h2>Esse é o modo fácil, ele é para iniciantes, pessoas que saibam o mínimo sobre tecnologia tendo perguntas muito simples com respostas pouco complexas. Dando ao usuário conhecimento básico.</h2>
+	</div>
+	
+	 <div id="qust">
+    <div id="pergunta">
+    <h1>Pergunta 1</h1><br>
+    <h2> Qual foi o criador da rede social “Facebook” ?</h2><br>
+    </div>
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Martin Goodman</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Malcolm Wheeler-Nicholson</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Steve Jobs</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="resposta1">Mark Zuckerberg</div>
+        <input type="radio" name="radio" id="r1">
+        <span class="checkmark"></span>
+        </label>
+    </form>
+
+    <br><hr color="FFD700"><br>
+
+    <div id="pergunta">
+    <h1>Pergunta 2</h1><br>
+    <h2>Quem foi o fundador da grande empresa Apple.Inc?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Grace Murray Hopper</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="resposta2">Steve Jobs</div>
+        <input type="radio" name="radio" id="r2">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Richard Stallman</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Donald Knuth</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+		
+		<br><hr color="FFD700"><br>
+	</form>	
+	<div id="pergunta">
+	<h1>Pergunta 3</h1><br>
+    <h2>Como podemos chamar os aplicativos para celular?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="resposta3">Aplicativos mobile</div>
+        <input type="radio" name="radio" id="r3">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Aplicativos IOS</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Aplicativos android</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Aplicativos para celular</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+		
+		<br><hr color="FFD700"><br>
+	</form>	
+    <div id="pergunta">   
+	 <h1>Pergunta 4</h1><br>
+    <h2>Qual foi a última versão Windows lançada para computadores?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Windows 7</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Windows 5</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Windows 12</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="resposta4">Windows 10</div>
+        <input type="radio" name="radio" id="r4">
+        <span class="checkmark"></span>
+        </label>
+
+		<br><hr color="FFD700"><br>
+	</form>	
+    <div id="pergunta">  
+	 <h1>Pergunta 5</h1><br>
+    <h2>Como é chamada a empresa que lançou o celular S10?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="resposta5">Samsung</div>
+        <input type="radio" name="radio" id="r5">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Apple</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Windows</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Iphone</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+		
+		<br><hr color="FFD700"><br>
+	</form>	
+    <div id="pergunta">
+	 <h1>Pergunta 6</h1><br>
+    <h2>Qual o ultimo iphone lançado?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="resposta6">Iphone X</div>
+        <input type="radio" name="radio" id="r6">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Iphone 15</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Iphone 1</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Iphone 7</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+		
+		<br><hr color="FFD700"><br>
+	</form>
+	
+    <div id="pergunta">    
+	 <h1>Pergunta 7</h1><br>
+    <h2>Quem fundou a Microsoft?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Steve Jobs</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Mark Zuckerberg</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="resposta7">Bill Gates</div>
+        <input type="radio" name="radio" id="r7">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Larry Page</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+		
+		<br><hr color="FFD700"><br>
+	</form>		
+    <div id="pergunta">   
+	 <h1>Pergunta 8</h1><br>
+    <h2>Como são chamados os computadores da Apple?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="resposta8">MacBook</div>
+        <input type="radio" name="radio" id="r8">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">MacIphone</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Samsung Mac</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Ipad</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+	
+	<br><hr color="FFD700"><br>
+	</form>	
+	
+    <div id="pergunta">  
+	 <h1>Pergunta 9</h1><br>
+    <h2>Qual grande bilionário ficou famoso graças ao desenvolvimento de um sistema operacional para desktop’s?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Elon Musk</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Henry Ford</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="resposta9">Bill Gates</div>
+        <input type="radio" name="radio"  id="r9">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Herberterbert Henry Dow</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+	
+	<br><hr color="FFD700"><br>
+	</form>	
+	
+    <div id="pergunta">
+	 <h1>Pergunta 10</h1><br>
+    <h2>Para que serve o disquete?</h2><br>
+    </div>
+
+    
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="resposta10">Para salvar arquivos</div>
+        <input type="radio" name="radio" id="r10">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">É apenas o designer do botão salvar</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Mover o cursor do mouse</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">É uma peça de processamendo de dados</div>
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+	
+        <br>        
+    	<input class="botao" type="submit" value="Tudo pronto!"/>
+    	<br>
+    	<br>
+		
+	</form>	
+    </form>
 	</div>
 </body>
 </html>

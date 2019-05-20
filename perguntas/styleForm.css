@@ -70,7 +70,26 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 18px;
+  margin: 40 8 0 5px;
   cursor: pointer;
 }
+
+/*PERGUNTAS*/
+#pergunta {width: auto; height: auto; text-align: justify; margin: 0 10 0 5px; position: relative;}
+#pergunta h1{font-family: Trebuchet MS; font-size: 40px; color: #FFD700;}
+#pergunta h2{font-family: Trebuchet MS; font-size: 35px; color: #363636;}
+
+/*MANIPULA*/
+
+#manipula {font-family: Arial;}
+#resposta1 {font-family: Arial;}
+#resposta2 {font-family: Arial;}
+#resposta3 {font-family: Arial;}
+#resposta4 {font-family: Arial;}
+#resposta5 {font-family: Arial;}
+#resposta6 {font-family: Arial;}
+#resposta7 {font-family: Arial;}
+#resposta8 {font-family: Arial;}
+#resposta9 {font-family: Arial;}
+#resposta10 {font-family: Arial;}
