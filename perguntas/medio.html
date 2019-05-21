@@ -9,6 +9,14 @@
 
 	 <script>
 	 	function checked(){
+			
+			// Desabilitar
+			indice_marcado = 0
+			function deshabilitar(formulario,idradio){
+				formulario.miradio[indice_marcado].checked = true
+				formulario.miradio[idradio].blur()	
+		}
+			
             // validacao
             for (var x = 0; x < 2; x++)
             {
@@ -22,21 +30,35 @@
             // contagem de acertos
             var acertos = 0;
             
-            if (document.getElementById("r1").checked == true)
-            {
-                acertos = acertos+1;
-            }
-            
-            if (document.getElementById("r2").checked == true)
-            {
-                acertos = acertos+1;
-            }
+			for(var x = 1; x <= 2; x++)
+			{
+				if (document.getElementById("r" + x).checked == true)
+				{
+					acertos = acertos+1;
+				}
+			}
 
   			sessionStorage.setItem("variavel", acertos);
 			open(﻿'fim.html','fim','status=no,Width=700px,Height=600px');
 			
-			document.getElementById("resposta1").style.color = "#00FF7F";
-			document.getElementById("resposta2").style.color = "#00FF7F";
+			// Mudando a cor das respostas
+			for(var i = 1; i <= 2; i++) 
+			{
+				document.getElementById("resposta" + i).style.color = "#00FF7F"; 
+			}
+			
+			// Travando as respostas erradas
+			for(var c = 1; c <= 6; c++)
+			{
+				document.getElementById("input" + c).disabled = true;
+			}
+			
+			// Travando as respostas certas
+			for(var q = 1; q <= 2; q++)
+			{
+				document.getElementById("r" + q).disabled = true;
+			}
+
 			
 			return false;
         }
@@ -79,11 +101,11 @@
     </div>
     <form name="formPergunta" checked="false" onsubmit="return checked()">
         <label class="container"><div id="manipula">University de Oregon</div>
-        <input type="radio" name="radio">
+        <input type="radio" name="radio" id="input1">
         <span class="checkmark"></span>
         </label>
         <label class="container"><div id="manipula">Instituto de Tecnologia de Massachusetts</div>
-        <input type="radio" name="radio">
+        <input type="radio" name="radio" id="input2">
         <span class="checkmark"></span>
         </label>
         <label class="container"><div id="resposta1">Universidade Harvard</div>
@@ -91,7 +113,7 @@
         <span class="checkmark"></span>
         </label>
         <label class="container"><div id="manipula">Universidade Stanford</div>
-        <input type="radio" name="radio">
+        <input type="radio" name="radio" id="input3">
         <span class="checkmark"></span>
         </label>
     </form>
@@ -105,8 +127,8 @@
 
     
     <form name="formPergunta" checked="false" onsubmit="return checked()">
-        <label class="container"><div id="manipula">Grace Murray Hopper</div>
-        <input type="radio" name="radio">
+        <label class="container"><div id="manipula" disabled = 'disabled'>Grace Murray Hopper</div>
+        <input type="radio" name="radio" id="input4">
         <span class="checkmark"></span>
         </label>
         <label class="container"><div id="resposta2">Ada Augusta Byron King</div>
@@ -114,11 +136,11 @@
         <span class="checkmark"></span>
         </label>
         <label class="container"><div id="manipula">Richard Stallman</div>
-        <input type="radio" name="radio">
+        <input type="radio" name="radio" id="input5">
         <span class="checkmark"></span>
         </label>
         <label class="container"><div id="manipula">Donald Knuth</div>
-        <input type="radio" name="radio">
+        <input type="radio" name="radio" id="input6">
         <span class="checkmark"></span>
         </label>
        
