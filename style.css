@@ -25,3 +25,15 @@ html,body{height:100%; width:100%; min-width: 1200;}
 #conteudo h2{font-family: Trebuchet MS; font-size: 20px; color: #2B2B2B; margin-left: 15px; margin-right: 15px;}
 
 #qust{position: absolute; margin-top: 450px; margin-left: 15px; margin-right: 15px;}
+
+/*INTRO*/
+#intro {width: 800px; margin-left: 50px}
+#intro h1{font-family: Arial; size: 80px; color: #FFD700;}
+#intro h2{font-family: Trebuchet MS; size: 60px; color: #2B2B2B; text-align: justify;}
+#intro a{text-decoration: none; font-family: Trebuchet MS; size: 60px; color: #2B2B2B; text-align: justify;}
+#intro a:hover{color:#FFD700;}
+
+/*RODAPE*/
+#rodape{background: #FFD700; width: 100%; height: 100px; margin-top: 900px; position: absolute;}
+#rodape h2{text-align:center;font-family: Trebuchet MS; font-size:22px; color:#2B2B2B; padding-top:20px;}
+#rodape h3{text-align:center;font-family: Trebuchet MS; font-size:19px; color:#2B2B2B; padding-top:5px;}
