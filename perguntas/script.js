@@ -1,13 +1,6 @@
 
 	 	function checked(){
 			
-			// Desabilitar
-			indice_marcado = 0
-			function deshabilitar(formulario,idradio){
-				formulario.miradio[indice_marcado].checked = true
-				formulario.miradio[idradio].blur()	
-		}
-			
             // validacao
             for (var x = 0; x < 2; x++)
             {
@@ -50,6 +43,5 @@
 				document.getElementById("r" + q).disabled = true;
 			}
 
-			
 			return false;
         }

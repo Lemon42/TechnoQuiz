@@ -30,7 +30,7 @@ html,body{height:100%; width:100%; min-width: 1200;}
 #intro {width: 800px; margin-left: 50px}
 #intro h1{font-family: Arial; size: 80px; color: #FFD700;}
 #intro h2{font-family: Trebuchet MS; size: 60px; color: #2B2B2B; text-align: justify;}
-#intro a{text-decoration: none; font-family: Trebuchet MS; size: 60px; color: #2B2B2B; text-align: justify;}
+#intro a{text-decoration: underline; font-family: Trebuchet MS; size: 60px; color: #2B2B2B; text-align: justify;}
 #intro a:hover{color:#FFD700;}
 
 /*RODAPE*/
