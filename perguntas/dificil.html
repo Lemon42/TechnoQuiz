@@ -6,19 +6,18 @@
 	<link  size="20x20px" rel='shortcut icon' href="../img/Icone.ico"/>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link rel="stylesheet" type="text/css" href="styleForm.css">
-</head>
+	<script type="text/javascript" src="script.js"></script>
+
 	<!-- Everton Dias n°10, 1°C -->
 	<!-- Gabriel Lopes n°13, 1°C -->
-	
+
 <body>
-	
 	<div id="topo">
 		<div id="banner">
 				<img src="../img/topo.png" title="Banner do Site"/>
 		</div>
 		<div id="menuTopo">
             <ul>
-            
                 <li><div id="text" title="choose your destiny">Dificuldade:</div></li>
                 <li><div id="facil"><a href="facil.html" title="Você tá de Brincadeira né?">FÁCIL</a></div></li>
                 <li><div id="medio"><a href="medio.html" title="Okay, podemos começar . . .">MÉDIO</a></div></li>
@@ -28,10 +27,285 @@
             <div id="voltar"><a href="../index.html" title="Voltar à página inicial">Voltar</a></div>
 		</div>
 	</div>
-	
+
 	<div id="conteudo">
-    <center>
-    </center>
+    	<h1 style="color: #FF0000;">DIFÍCIL</h1><br>
+    	<h2>Esse é o último nível e te garanto que se você passar desse acertando todas as questões pode se considerar um expert da tecnologia. Nesse nível você irá ver perguntas muito difíceis e outras impossíveis. Então novamente lhe desejo boa sorte (porque nesse realmente ira precisar).</h2>
+	</div>
+
+	<div id="qust">
+		<!--Pergunta 1-->
+    <div id="pergunta">
+    <h1>Pergunta 1</h1><br>
+    <h2>Quanto vale 1 Terabyte?</h2><br>
+    </div>
+
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">50.000.000.000 bits</div>
+        <input type="radio" name="radio" id="input1">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">1.000.000.000.000 bits</div>
+        <input type="radio" name="radio" id="input2">
+        <span class="checkmark"></span>
+        </label>
+				<label class="container"><div id="resposta1">8.000.000.000.000 bits</div>
+				<input type="radio" name="radio" id="r1">
+				<span class="checkmark"></span>
+				</label>
+        <label class="container"><div id="manipula">9,007e+15 bits</div>
+        <input type="radio" name="radio" id="input3">
+        <span class="checkmark"></span>
+        </label>
+    </form>
+
+    <br><hr color="FFD700"><br>
+
+		<!--Pergunta 2-->
+    <div id="pergunta">
+    <h1>Pergunta 2</h1><br>
+    <h2>Quem é conhecido como o "pai da computação"?</h2><br>
+    </div>
+
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+				<label class="container"><div id="resposta2">Alan Turing</div>
+				<input type="radio" name="radio" id="r2">
+				<span class="checkmark"></span>
+				</label>
+        <label class="container"><div id="manipula">Dennis Ritchie</div>
+        <input type="radio" name="radio" id="input4">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Richard Stallman</div>
+        <input type="radio" name="radio" id="input5">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">John Backus</div>
+        <input type="radio" name="radio" id="input6">
+        <span class="checkmark"></span>
+        </label>
+		</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 3-->
+	<div id="pergunta">
+	<h1>Pergunta 3</h1><br>
+  <h2>Qual foi o primeiro computador no Brasil?</h2><br>
+  </div>
+
+  <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Ramac 305</div>
+        <input type="radio" name="radio" id="input7">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">TRADIC</div>
+        <input type="radio" name="radio" id="input8">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">IBM 7094</div>
+        <input type="radio" name="radio" id="input9">
+        <span class="checkmark"></span>
+        </label>
+				<label class="container"><div id="resposta3">Univac-120</div>
+				<input type="radio" name="radio" id="r3">
+				<span class="checkmark"></span>
+				</label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 4-->
+  <div id="pergunta">
+	<h1>Pergunta 4</h1><br>
+  <h2>Quando foi lançado o primeiro PROTOTIPO do mouse?</h2><br>
+  </div>
+
+    <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">1962</div>
+        <input type="radio" name="radio" id="input10">
+        <span class="checkmark"></span>
+        </label>
+				<label class="container"><div id="resposta4">1963</div>
+				<input type="radio" name="radio" id="r4">
+				<span class="checkmark"></span>
+				</label>
+        <label class="container"><div id="manipula">1964</div>
+        <input type="radio" name="radio" id="input11">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">1970</div>
+        <input type="radio" name="radio" id="input12">
+        <span class="checkmark"></span>
+        </label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 5-->
+  <div id="pergunta">
+	<h1>Pergunta 5</h1><br>
+  <h2>Qual foi o primeiro vídeo lançado no youtube? </h2><br>
+  </div>
+
+  <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="resposta5">Me at the Zoo </div>
+        <input type="radio" name="radio" id="r5">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">First Video</div>
+        <input type="radio" name="radio" id="input13">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Hello World</div>
+        <input type="radio" name="radio" id="input14">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Visiting the park</div>
+        <input type="radio" name="radio" id="input15">
+        <span class="checkmark"></span>
+        </label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 6-->
+  <div id="pergunta">
+	<h1>Pergunta 6</h1><br>
+  <h2>Qual o peso do primeiro celular lançado? </h2><br>
+  </div>
+
+  <form name="formPergunta" checked="false" onsubmit="return checked()">
+      <label class="container"><div id="manipula">507 gramas</div>
+      <input type="radio" name="radio" id="input16">
+      <span class="checkmark"></span>
+      </label>
+      <label class="container"><div id="manipula">1005 gramas</div>
+      <input type="radio" name="radio" id="input17">
+      <span class="checkmark"></span>
+      </label>
+      <label class="container"><div id="manipula">641 gramas</div>
+      <input type="radio" name="radio" id="input18">
+      <span class="checkmark"></span>
+      </label>
+			<label class="container"><div id="resposta6">793 gramas</div>
+			<input type="radio" name="radio" id="r6">
+			<span class="checkmark"></span>
+			</label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 7-->
+  <div id="pergunta">
+	<h1>Pergunta 7</h1><br>
+  <h2>Quem foi o inventor da televisão?</h2><br>
+  </div>
+
+  <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Wilhelm Conrad Röntgen</div>
+        <input type="radio" name="radio" id="input19">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Humphry Davy</div>
+        <input type="radio" name="radio" id="input20">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="resposta7">John Logie Baird</div>
+        <input type="radio" name="radio" id="r7">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Graham Bell</div>
+        <input type="radio" name="radio" id="input21">
+        <span class="checkmark"></span>
+			</label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 8-->
+  <div id="pergunta">
+	<h1>Pergunta 8</h1><br>
+  <h2>Qual foi o primero navegador da internet?</h2><br>
+  </div>
+
+  <form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">Netscape</div>
+        <input type="radio" name="radio" id="input22">
+        <span class="checkmark"></span>
+        </label>
+				<label class="container"><div id="resposta8">Mosaic</div>
+				<input type="radio" name="radio" id="r8">
+				<span class="checkmark"></span>
+				</label>
+        <label class="container"><div id="manipula">Sleipnir</div>
+        <input type="radio" name="radio" id="input23">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Internet Explorer 1.0</div>
+        <input type="radio" name="radio" id="input24">
+        <span class="checkmark"></span>
+        </label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 9-->
+  <div id="pergunta">
+	<h1>Pergunta 9</h1><br>
+  <h2>Qual foi o pior virus já programado?</h2><br>
+  </div>
+
+  <form name="formPergunta" checked="false" onsubmit="return checked()">
+			<label class="container"><div id="resposta9">Stuxnet</div>
+				<input type="radio" name="radio"  id="r9">
+				<span class="checkmark"></span>
+				</label>
+        <label class="container"><div id="manipula">Melissa</div>
+        <input type="radio" name="radio" id="input25">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Wanna Cry</div>
+        <input type="radio" name="radio" id="input26">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">Stoned</div>
+        <input type="radio" name="radio" id="input27">
+        <span class="checkmark"></span>
+        </label>
+	</form>
+
+	<br><hr color="FFD700"><br>
+
+	<!--Pergunta 10-->
+  <div id="pergunta">
+	<h1>Pergunta 10</h1><br>
+  <h2>Qual é o tamanho do InternetArchive?</h2><br>
+  </div>
+
+	<form name="formPergunta" checked="false" onsubmit="return checked()">
+        <label class="container"><div id="manipula">5 PetaBytes</div>
+        <input type="radio" name="radio" id="input28">
+        <span class="checkmark"></span>
+        </label>
+				<label class="container"><div id="resposta10">10 PetaBytes</div>
+				<input type="radio" name="radio" id="r10">
+				<span class="checkmark"></span>
+				</label>
+        <label class="container"><div id="manipula">15 PetaBytes</div>
+        <input type="radio" name="radio" id="input29">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container"><div id="manipula">20 PetaBytes</div>
+        <input type="radio" name="radio" id="input30">
+        <span class="checkmark"></span>
+        </label>
+
+      <br>
+    	<input class="botao" type="submit" value="Tudo pronto!"/> <!--BOTÃO SUBMIT-->
+    	<br>
+    	<br>
+	</form>
 	</div>
 </body>
 </html>

@@ -3,17 +3,43 @@
 <head>
 	<title>Seu resultado!</title>
 	<link  size="20x20px" rel='shortcut icon' href="../img/Icone.ico"/>
-	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../styleFim.css">
 </head>
 <body bgcolor="#FFD700">
-	
+
 	<div id="conteudo">
 		<script>
-			document.open();	
-			document.write("<font face='Arial' color='#2B2B2B' size='35px'>Quantidade de Acertos: " +  sessionStorage.getItem("variavel")+ "</font>");
+			document.open();
+
+			var acertos = sessionStorage.getItem("acertosInstacia");
+
+			document.write("<font face='Arial' color='#2B2B2B' size='35px'>Quantidade de Acertos: " +  acertos + "/10</font><br><br><br><br>");
+
+			if(acertos <= 4){
+
+				document.write("<font face='Arial' color='#FF0000' size='25px'>Ops! Seu resultado não é dos melhores :(</font>");
+
+			} else if (acertos <= 6){
+
+				document.write("<font face='Arial' color='#2B2B2B' size='25px'>Bem Podemos melhoar, mas está quase lá ;)</font>");
+
+			} else if (acertos <=8){
+
+				document.write("<font face='Arial' color='#2B2B2B' size='25px'>Uao! seu resultado foi bom!</font>");
+
+			} else if (acertos == 9){
+
+				document.write("<font face='Arial' color='#2B2B2B' size='25px'>Foi por muito pouco! Mesmo assim parabéns!!!</font>");
+
+			} else{
+
+				document.write("<font face='Arial' color='#00FF7F' size='25px'>Parabéns você acertou todas as questões!!!</font>");
+
+			}
+
 			document.close();
 		</script>
 	</div>
-	
+
 </body>
 </html>

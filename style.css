@@ -10,12 +10,12 @@ html,body{height:100%; width:100%; min-width: 1200;}
 #menuTopo {margin-top: 200px; position: absolute; height: 55px; width: 100%; background: #2B2B2B;}
 #menuTopo ul{float:left; list-style:none; margin-top: 8px; margin-left: 0px}
 #menuTopo li{position:relative;float:left;}
-#menuTopo li a{text-decoration: none; color:#FFD700;list-style: none; margin:0 0 0 60px; font-family: Trebuchet MS; font-size:35px;} 
+#menuTopo li a{text-decoration: none; color:#FFD700;list-style: none; margin:0 0 0 60px; font-family: Trebuchet MS; font-size:35px;}
 
 #text{font-family: Trebuchet MS; font-size:29px; color:#423D3C; margin-top: 3px;}
 #facil a:hover{color:#228B22;}
-#medio a:hover{color:#FFFF00; }
 #dificil a:hover{color:#FF0000;}
+#medio a:hover{color:#FFFF00; }
 #voltar a{font-family: Trebuchet MS; float:right; font-size: 25px; color:#FFD700; margin-right: 60px; margin-top: 13px; position: relative; text-decoration: none;}
 #voltar a:hover{color:#423D3C;}
 
