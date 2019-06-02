@@ -1,9 +1,9 @@
-// programado por: Everton Dias e Gabriel Lopes
+// programado por: Everton Dias e Gabriel Lopes agradecimento Fernandi Dias
 
 function checked()
 {
 	// validacao
-	for (var x = 0; x < 2; x++)
+	for (var x = 0; x < 10; x++)
   {
 		if (document.formPergunta[x].radio[0].checked == false && document.formPergunta[x].radio[1].checked == false && document.formPergunta[x].radio[2].checked == false && document.formPergunta[x].radio[3].checked == false)
     {
